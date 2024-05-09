@@ -24,6 +24,6 @@ window.addEventListener('load', function (e) {
     div.forEach(item => {
         let sign = item.getAttribute("id");
         let content = item.innerHTML;
-        item.innerHTML = '<a target="_blank" rel="noopener noreferrer" href= "https://tn.com.ar/horoscopo/horoscopo-de-' + sign + '-hoy-' + day + '-' + num + '-de-' + month.name + '-de-' + year + '" style="color: #212529; text-decoration: none">' + content + '</a>';
+        item.innerHTML = '<a target="_blank" rel="noopener noreferrer" href= "https://elperfil.pe/tendencias/horoscopo-de-' + sign + '-hoy-' + day + '-' + num + '-de-' + month.name + '-de-' + year + '" style="color: #212529; text-decoration: none">' + content + '</a>';
     })
 })
