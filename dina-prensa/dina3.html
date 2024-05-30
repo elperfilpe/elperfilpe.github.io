@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Días de Dina Boluarte sin responder a la prensa | EL PERFIL</title>
+    <link rel='preload' href='https://iframes.elperfil.pe/dina-prensa/imagenes/bg-dinaprensa-desk.webp' as='image' imagesrcset='' imagesizes='' />
+    <link rel='preload' href='https://iframes.elperfil.pe/dina-prensa/imagenes/bg-dinaprensa-tab.webp' as='image' imagesrcset='' imagesizes='' />
+    <link rel='preload' href='https://iframes.elperfil.pe/dina-prensa/imagenes/bg-dinaprensa-mov.webp' as='image' imagesrcset='' imagesizes='' />
+    <link rel='preload' href='https://iframes.elperfil.pe/dina-prensa/fuentes/regular.woff2' as='font' type='font/woff2' fetchpriority='high' crossorigin='anonymous'>
+    <link rel='preload' href='https://iframes.elperfil.pe/dina-prensa/fuentes/bold.woff2' as='font' type='font/woff2' fetchpriority='high' crossorigin='anonymous'>
+    <style>
+        @font-face {
+            font-family: 'EP Sans';
+            src: url('https://iframes.elperfil.pe/dina-prensa/fuentes/regular.woff2') format('woff2'), url('https://iframes.elperfil.pe/dina-prensa/fuentes/regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'EP Sans';
+            src: url('https://iframes.elperfil.pe/dina-prensa/fuentes/bold.woff2') format('woff2'), url('https://iframes.elperfil.pe/dina-prensa/fuentes/bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        .iframe-dina {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0px;
+            background-image: url("https://iframes.elperfil.pe/dina-prensa/imagenes/bg-dinaprensa-desk.webp");
+            background-size: cover;
+            background-position: left;
+            border-radius: 8px;
+            max-width: 1294px;
+            margin: 0 auto;
+            height: 200px;
+        }
+        @media (max-width: 492px) {
+            .iframe-dina {
+                background-image: url("https://iframes.elperfil.pe/dina-prensa/imagenes/bg-dinaprensa-mov.webp");
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .iframe-dina {
+                background-image: url("https://iframes.elperfil.pe/dina-prensa/imagenes/bg-dinaprensa-tab.webp");
+            }
+        }
+        @media (max-width: 492px) {
+            .container-dina {
+                margin-left: 0%;
+            }
+        }
+        @media (min-width: 493px) and (max-width: 768px) {
+            .container-dina {
+                margin-left: 45%;
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1024px) {
+            .container-dina {
+                margin-left: 33%;
+            }
+        }
+        .container-dina {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-family: 'EP Sans' !important;
+        }
+        .contador {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            justify-content: center;
+            margin-bottom: -5px;
+        }
+        @media (max-width: 767px) {
+            .contador {
+                text-shadow: rgb(16, 16, 16) 0px 0px 10px;
+            }
+        }
+        @media (max-width: 425px) {
+            .contador {
+                margin-bottom: 0px;
+            }
+        }
+        .numero {
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 1;
+            margin-right: 10px;
+            color: #FFB400;
+        }
+        @media (max-width: 425px) {
+            .numero {
+                padding-top: 3px;
+                font-size: 70px;
+            }
+        }
+        .contador-lineas {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #F4F2F5;
+        }
+        .texto-contador {
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 700;
+        }
+        @media (max-width: 435px) {
+            .texto-contador {
+               font-size: 16px;
+            }
+        }
+        .texto-contador-adicional {
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 400;
+            margin-top: 6px;
+        }
+        @media (max-width: 320px) {
+            .texto-contador-adicional {
+                font-size: 10px;
+            }
+        }
+        .aclaracion {
+            padding: 6px 20px 6px 20px;
+            border: 1px solid #88888866;
+            border-radius: 200px;
+            background: rgba(0, 0, 0, 0.5);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+        }
+        .texto {
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 400;
+        }
+        @media (max-width: 435px) {
+            .texto {
+               font-size: 12px;
+            }
+            .aclaracion {
+                padding: 1px 13px 3px 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-dina">
+        <div class="container-dina">
+            <div class="info">
+                <div class="contador">
+                    <span class="numero" id="contador-dias">XX</span>
+                    <div class="contador-lineas">
+                        <span class="texto-contador">DÍAS SIN RESPONDER</span>
+                        <span class="texto-contador">A LA PRENSA</span>
+                        <span class="texto-contador-adicional">Desde el 5 de abril de 2024</span>           
+                    </div>
+                </div>
+            </div>
+            <div class="aclaracion">
+                <span class="texto">#RespondeBoluarte</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calcularDias() {
+            const fechaInicio = new Date('2024-04-05');
+            const fechaActual = new Date();
+            const diferenciaTiempo = fechaActual - fechaInicio;
+            const diferenciaDias = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
+            document.getElementById('contador-dias').textContent = diferenciaDias;
+        }
+
+        calcularDias();
+        setInterval(calcularDias, 24 * 60 * 60 * 1000); // Actualiza el contador cada 24 horas
+    </script>
+</body>
+</html>
