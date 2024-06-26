@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Ocultamos la barra de desplazamiento del body */
+        }
+        .widget-container {
+            width: 100%;
+            max-width: 970px;
+            margin: 0 auto;
+            height: 160px;
+            overflow-x: scroll; /* Habilitamos el desplazamiento horizontal */
+            white-space: nowrap; /* Aseguramos que los elementos no se rompan al final de la línea */
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            box-sizing: border-box;
+            scrollbar-width: none; /* Firefox: ocultar el scrollbar */
+            -ms-overflow-style: none; /* IE 10+ y Edge: ocultar el scrollbar */
+        }
+
+        .widget-container::-webkit-scrollbar {
+            display: none; /* WebKit: ocultar el scrollbar */
+        }
+
+        .match {
+            display: inline-block;
+            width: 224px;
+            margin-right: 10px;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .match .teams {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .match .team {
+            width: 45%;
+            text-align: center;
+        }
+
+        .match .team img {
+            width: 30px;
+            height: auto;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        .match .score {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .group-date {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .datetime {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="leftButton" class="arrow-button left">&lt;</div>
+    <div id="rightButton" class="arrow-button right">&gt;</div>
+    <div id="widget" class="widget-container">
+    </div>
+
+    <script>
+        // Obtener los datos JSON desde la URL
+        fetch('https://marcadores-data.infobae.com/matches-by-league/5te8vskbhb3t1n687hua2waac.json')
+            .then(response => response.json())
+            .then(data => {
+                const matches = data.matches;
+                const widgetContainer = document.getElementById('widget');
+                const now = new Date();
+                const tomorrow = new Date(now);
+                tomorrow.setDate(now.getDate() + 1);
+
+                // Función para determinar el partido más cercano y hacer scroll automático
+                function scrollToNextMatch() {
+                    const matches = document.querySelectorAll('.match');
+                    let scrollToMatch = null;
+
+                    // Encontrar el primer partido de hoy o el más cercano
+                    matches.forEach(matchElement => {
+                        const datetimeElement = matchElement.querySelector('.datetime');
+                        if (datetimeElement.textContent.includes('HOY') || datetimeElement.textContent.includes('MAÑANA')) {
+                            scrollToMatch = matchElement;
+                            return; // Salir del bucle forEach cuando se encuentre el primer partido válido
+                        }
+                    });
+
+                    // Si se encontró un partido para scroll, hacer scroll automático al inicio del widget
+                    if (scrollToMatch) {
+                        // Calcular la posición relativa al inicio del widget
+                        const widgetRect = widgetContainer.getBoundingClientRect();
+                        const matchRect = scrollToMatch.getBoundingClientRect();
+                        const scrollToPosition = matchRect.left - widgetRect.left;
+
+                        // Hacer scroll automático con un pequeño ajuste para asegurarse de que esté al inicio
+                        widgetContainer.scrollTo({
+                            left: scrollToPosition - 713, // Ajuste para alinear bien al inicio
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+
+                matches.forEach(match => {
+                    const matchElement = document.createElement('div');
+                    matchElement.classList.add('match');
+
+                    const homeCode = match.home.code || '---';
+                    const awayCode = match.away.code || '---';
+                    const homeFlag = `https://elperfil.pe/recursos/widgets/torneos2024/copa-america/${homeCode === '---' ? 'NOB' : homeCode}.webp`;
+                    const awayFlag = `https://elperfil.pe/recursos/widgets/torneos2024/copa-america/${awayCode === '---' ? 'NOB' : awayCode}.webp`;
+
+                    // Convertir fullDate a objeto Date y ajustar a hora de Perú (GMT-5) en formato AM/PM
+                    const matchDate = new Date(match.fullDate);
+                    const peruvianTime = new Date(matchDate.toLocaleString("en-US", { timeZone: "America/Lima" }));
+                    const hours = peruvianTime.getHours();
+                    const minutes = peruvianTime.getMinutes();
+                    const ampm = hours >= 12 ? 'P. M.' : 'A. M.';
+                    const formattedHour = hours % 12 || 12; // Convertir a formato 12 horas
+                    const matchTimeString = `${formattedHour}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
+
+                    // Determinar si es HOY, MAÑANA, o mostrar "FINALIZADO" si ya terminó
+                    let datetimeDisplay;
+                    if (matchDate <= now) {
+                        datetimeDisplay = `FINALIZADO`;
+                    } else if (matchDate.toDateString() === now.toDateString()) {
+                        datetimeDisplay = `HOY - ${matchTimeString}`;
+                    } else if (matchDate.toDateString() === tomorrow.toDateString()) {
+                        datetimeDisplay = `MAÑANA - ${matchTimeString}`;
+                    } else {
+                        // Determinar la fecha real del partido en formato "MAR, 25 JUN - 5:00 P. M."
+                        datetimeDisplay = `${matchDate.toLocaleDateString('es-ES', {
+                            weekday: 'short',
+                            day: '2-digit',
+                            month: 'short'
+                        })} - ${matchTimeString}`;
+                    }
+
+                    // Determinar la fecha del grupo (GRUPO A - FECHA 1, etc.)
+                    let groupDateDisplay;
+                    if (!match.group && !match.week) {
+                        switch (matchDate.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit' })) {
+                            case '07/04':
+                            case '07/05':
+                            case '07/06':
+                                groupDateDisplay = 'CUARTOS';
+                                break;
+                            case '07/09':
+                            case '07/10':
+                                groupDateDisplay = 'SEMIS';
+                                break;
+                            case '07/13':
+                                groupDateDisplay = '3 Y 4 PUESTO';
+                                break;
+                            case '07/14':
+                                groupDateDisplay = 'FINAL';
+                                break;
+                            default:
+                                groupDateDisplay = '';
+                        }
+                    } else {
+                        groupDateDisplay = match.group ? `GRUPO ${match.group.slice(-1)} - FECHA ${match.week}` : '';
+                    }
+
+                    matchElement.innerHTML = `
+                        <div class="group-date">${groupDateDisplay}</div>
+                        <div class="datetime">${datetimeDisplay}</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="${homeFlag}" alt="${homeCode} Flag">
+                                ${homeCode}
+                            </div>
+                            <div class="score">${matchDate <= now ? `${match.home.score !== null ? match.home.score : '-'} - ${match.away.score !== null ? match.away.score : '-'}` : 'VS'}</div>
+                            <div class="team">
+                                <img src="${awayFlag}" alt="${awayCode} Flag">
+                                ${awayCode}
+                            </div>
+                        </div>
+                    `;
+
+                    widgetContainer.appendChild(matchElement);
+                });
+
+                // Después de agregar todos los partidos, hacer scroll al partido más cercano
+                scrollToNextMatch();
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    </script>
+    <script>
+        // Manejar eventos de clic en botones de flecha
+        const leftButton = document.getElementById('leftButton');
+        const rightButton = document.getElementById('rightButton');
+        const widgetContainer = document.getElementById('widget');
+    
+        leftButton.addEventListener('click', () => {
+            widgetContainer.scrollBy({
+                left: -240,
+                behavior: 'smooth'
+            });
+        });
+    
+        rightButton.addEventListener('click', () => {
+            widgetContainer.scrollBy({
+                left: 240,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
+</body>
+</html>
