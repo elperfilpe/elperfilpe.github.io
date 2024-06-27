@@ -1,0 +1,919 @@
+{
+    "idTournamentCalendar": "5te8vskbhb3t1n687hua2waac",
+    "idCompetition": "45db8orh1qttbsqq9hqapmbit",
+    "nameCompetition": "CONMEBOL Copa America",
+    "matches": [
+        {
+            "date": "20/06/24",
+            "fullDate": "2024-06-21T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "8mkv35e1zkfolf66set6a1v6c",
+            "state": "played",
+            "time": "20:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group A",
+            "home": {
+                "id": "ak48fkypnql8y4n69cvcq5ghc",
+                "name": "Argentina",
+                "shortName": "Argentina",
+                "officialName": "Argentina",
+                "code": "ARG",
+                "score": 2,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "eg7vduna0h3vis1wd47s41za7",
+                "name": "Canada",
+                "shortName": "Canada",
+                "officialName": "Canada",
+                "code": "CAN",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "21/06/24",
+            "fullDate": "2024-06-22T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "cmztp6r0533tqxj81ddc4iz2s",
+            "state": "played",
+            "time": "19:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group A",
+            "home": {
+                "id": "a9sendamrqqz1uv4jc89mfum8",
+                "name": "Peru",
+                "shortName": "Peru",
+                "officialName": "Peru",
+                "code": "PER",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "4etj58jfe5zmfspk9pl7jfzr3",
+                "name": "Chile",
+                "shortName": "Chile",
+                "officialName": "Chile",
+                "code": "CHI",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "22/06/24",
+            "fullDate": "2024-06-22T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "d553ad5qi2g09uyy40oukhixg",
+            "state": "played",
+            "time": "15:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group B",
+            "home": {
+                "id": "2j2402oabiovxw24cnjk9m369",
+                "name": "Ecuador",
+                "shortName": "Ecuador",
+                "officialName": "Ecuador",
+                "code": "ECU",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "2pguid8qwn158n8a58waenbbq",
+                "name": "Venezuela",
+                "shortName": "Venezuela",
+                "officialName": "Venezuela",
+                "code": "VEN",
+                "score": 2,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "22/06/24",
+            "fullDate": "2024-06-23T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "75xd8729guzwed684x064o3ys",
+            "state": "played",
+            "time": "20:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group B",
+            "home": {
+                "id": "4vofb84dzb5fyc81n2ssws6ah",
+                "name": "Mexico",
+                "shortName": "Mexico",
+                "officialName": "Mexico",
+                "code": "MEX",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "8yhjl13p7luh3v905btbvz42t",
+                "name": "Jamaica",
+                "shortName": "Jamaica",
+                "officialName": "Jamaica",
+                "code": "JAM",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "23/06/24",
+            "fullDate": "2024-06-23T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "6w0xr7ckse0i9s70bd7d94cno",
+            "state": "played",
+            "time": "17:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group C",
+            "home": {
+                "id": "9vh2u1p4ppm597tjfahst2m3n",
+                "name": "United States",
+                "shortName": "United States",
+                "officialName": "United States",
+                "code": "USA",
+                "score": 2,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "eqi93j51n7mhyon0hzb4kxsdg",
+                "name": "Bolivia",
+                "shortName": "Bolivia",
+                "officialName": "Bolivia",
+                "code": "BOL",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "23/06/24",
+            "fullDate": "2024-06-24T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "65mw9pea1ggffr06apq4igvmc",
+            "state": "played",
+            "time": "21:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group C",
+            "home": {
+                "id": "9l06impjllgop0gte8fldb4zo",
+                "name": "Uruguay",
+                "shortName": "Uruguay",
+                "officialName": "Uruguay",
+                "code": "URU",
+                "score": 3,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "8856r86rattc8kxn6a0l9tb2t",
+                "name": "Panama",
+                "shortName": "Panama",
+                "officialName": "Panama",
+                "code": "PAN",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "24/06/24",
+            "fullDate": "2024-06-24T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "5xjvk0wm53vji7tm93v6bzklw",
+            "state": "played",
+            "time": "17:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group D",
+            "home": {
+                "id": "7km4szeh6fs5bbdgypshh0snd",
+                "name": "Colombia",
+                "shortName": "Colombia",
+                "officialName": "Colombia",
+                "code": "COL",
+                "score": 2,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "3cwjdmekfdouwg990mqdq9fh0",
+                "name": "Paraguay",
+                "shortName": "Paraguay",
+                "officialName": "Paraguay",
+                "code": "PAR",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "24/06/24",
+            "fullDate": "2024-06-25T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "6jpxhh944l14fas2jflxp6t5g",
+            "state": "played",
+            "time": "18:00",
+            "country": "south-america",
+            "week": "1",
+            "group": "Group D",
+            "home": {
+                "id": "ajab3nmpoltsoeqcuoyi4pwzx",
+                "name": "Brazil",
+                "shortName": "Brazil",
+                "officialName": "Brazil",
+                "code": "BRA",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "bfgqfm4qa3mal7fll74wd04mu",
+                "name": "Costa Rica",
+                "shortName": "Costa Rica",
+                "officialName": "Costa Rica",
+                "code": "CRC",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "25/06/24",
+            "fullDate": "2024-06-25T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "2g4itfkywdc86tcugrzb06q6s",
+            "state": "played",
+            "time": "17:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group A",
+            "home": {
+                "id": "a9sendamrqqz1uv4jc89mfum8",
+                "name": "Peru",
+                "shortName": "Peru",
+                "officialName": "Peru",
+                "code": "PER",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "eg7vduna0h3vis1wd47s41za7",
+                "name": "Canada",
+                "shortName": "Canada",
+                "officialName": "Canada",
+                "code": "CAN",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "25/06/24",
+            "fullDate": "2024-06-26T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "14vm63t51auczst3n73015wr8",
+            "state": "played",
+            "time": "21:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group A",
+            "home": {
+                "id": "4etj58jfe5zmfspk9pl7jfzr3",
+                "name": "Chile",
+                "shortName": "Chile",
+                "officialName": "Chile",
+                "code": "CHI",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "ak48fkypnql8y4n69cvcq5ghc",
+                "name": "Argentina",
+                "shortName": "Argentina",
+                "officialName": "Argentina",
+                "code": "ARG",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "26/06/24",
+            "fullDate": "2024-06-26T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "e28acdmvk0stfdfv5yw34rv2s",
+            "state": "played",
+            "time": "15:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group B",
+            "home": {
+                "id": "2j2402oabiovxw24cnjk9m369",
+                "name": "Ecuador",
+                "shortName": "Ecuador",
+                "officialName": "Ecuador",
+                "code": "ECU",
+                "score": 3,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "8yhjl13p7luh3v905btbvz42t",
+                "name": "Jamaica",
+                "shortName": "Jamaica",
+                "officialName": "Jamaica",
+                "code": "JAM",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "26/06/24",
+            "fullDate": "2024-06-27T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "f4i9bgdo7nplfv3kx68lz38r8",
+            "state": "incoming",
+            "time": "18:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group B",
+            "home": {
+                "id": "2pguid8qwn158n8a58waenbbq",
+                "name": "Venezuela",
+                "shortName": "Venezuela",
+                "officialName": "Venezuela",
+                "code": "VEN",
+                "score": 1,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "4vofb84dzb5fyc81n2ssws6ah",
+                "name": "Mexico",
+                "shortName": "Mexico",
+                "officialName": "Mexico",
+                "code": "MEX",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "27/06/24",
+            "fullDate": "2024-06-27T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "aeka2bn59yur0gz4bmfbk80t0",
+            "state": "incoming",
+            "time": "18:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group C",
+            "home": {
+                "id": "8856r86rattc8kxn6a0l9tb2t",
+                "name": "Panama",
+                "shortName": "Panama",
+                "officialName": "Panama",
+                "code": "PAN",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "9vh2u1p4ppm597tjfahst2m3n",
+                "name": "United States",
+                "shortName": "United States",
+                "officialName": "United States",
+                "code": "USA",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "27/06/24",
+            "fullDate": "2024-06-28T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "8bmtkd7lrx7ht5tcq8kzvdhqs",
+            "state": "incoming",
+            "time": "21:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group C",
+            "home": {
+                "id": "9l06impjllgop0gte8fldb4zo",
+                "name": "Uruguay",
+                "shortName": "Uruguay",
+                "officialName": "Uruguay",
+                "code": "URU",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "eqi93j51n7mhyon0hzb4kxsdg",
+                "name": "Bolivia",
+                "shortName": "Bolivia",
+                "officialName": "Bolivia",
+                "code": "BOL",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "28/06/24",
+            "fullDate": "2024-06-28T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "7r8okj0y2947mia6xzdmrsaac",
+            "state": "incoming",
+            "time": "15:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group D",
+            "home": {
+                "id": "7km4szeh6fs5bbdgypshh0snd",
+                "name": "Colombia",
+                "shortName": "Colombia",
+                "officialName": "Colombia",
+                "code": "COL",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "bfgqfm4qa3mal7fll74wd04mu",
+                "name": "Costa Rica",
+                "shortName": "Costa Rica",
+                "officialName": "Costa Rica",
+                "code": "CRC",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "28/06/24",
+            "fullDate": "2024-06-29T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "926bu1brlcapqrr3vipfy9fro",
+            "state": "incoming",
+            "time": "18:00",
+            "country": "south-america",
+            "week": "2",
+            "group": "Group D",
+            "home": {
+                "id": "3cwjdmekfdouwg990mqdq9fh0",
+                "name": "Paraguay",
+                "shortName": "Paraguay",
+                "officialName": "Paraguay",
+                "code": "PAR",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "ajab3nmpoltsoeqcuoyi4pwzx",
+                "name": "Brazil",
+                "shortName": "Brazil",
+                "officialName": "Brazil",
+                "code": "BRA",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "29/06/24",
+            "fullDate": "2024-06-30T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "3sw2lc31od1sck00jv9u9anf8",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group A",
+            "home": {
+                "id": "ak48fkypnql8y4n69cvcq5ghc",
+                "name": "Argentina",
+                "shortName": "Argentina",
+                "officialName": "Argentina",
+                "code": "ARG",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "a9sendamrqqz1uv4jc89mfum8",
+                "name": "Peru",
+                "shortName": "Peru",
+                "officialName": "Peru",
+                "code": "PER",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "29/06/24",
+            "fullDate": "2024-06-30T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "56ubkbr18vlebtuhs3rf0nhuc",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group A",
+            "home": {
+                "id": "eg7vduna0h3vis1wd47s41za7",
+                "name": "Canada",
+                "shortName": "Canada",
+                "officialName": "Canada",
+                "code": "CAN",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "4etj58jfe5zmfspk9pl7jfzr3",
+                "name": "Chile",
+                "shortName": "Chile",
+                "officialName": "Chile",
+                "code": "CHI",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "30/06/24",
+            "fullDate": "2024-07-01T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "1boa9hbxrruitmbh92tqzjdhw",
+            "state": "incoming",
+            "time": "19:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group B",
+            "home": {
+                "id": "8yhjl13p7luh3v905btbvz42t",
+                "name": "Jamaica",
+                "shortName": "Jamaica",
+                "officialName": "Jamaica",
+                "code": "JAM",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "2pguid8qwn158n8a58waenbbq",
+                "name": "Venezuela",
+                "shortName": "Venezuela",
+                "officialName": "Venezuela",
+                "code": "VEN",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "30/06/24",
+            "fullDate": "2024-07-01T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "2gwzlpot9g4yob9bsrlcbqu50",
+            "state": "incoming",
+            "time": "17:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group B",
+            "home": {
+                "id": "4vofb84dzb5fyc81n2ssws6ah",
+                "name": "Mexico",
+                "shortName": "Mexico",
+                "officialName": "Mexico",
+                "code": "MEX",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "2j2402oabiovxw24cnjk9m369",
+                "name": "Ecuador",
+                "shortName": "Ecuador",
+                "officialName": "Ecuador",
+                "code": "ECU",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "01/07/24",
+            "fullDate": "2024-07-02T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "1c33y54i9azznnlzg1f2vumtw",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group C",
+            "home": {
+                "id": "9vh2u1p4ppm597tjfahst2m3n",
+                "name": "United States",
+                "shortName": "United States",
+                "officialName": "United States",
+                "code": "USA",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "9l06impjllgop0gte8fldb4zo",
+                "name": "Uruguay",
+                "shortName": "Uruguay",
+                "officialName": "Uruguay",
+                "code": "URU",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "01/07/24",
+            "fullDate": "2024-07-02T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "ciepyex1bfubv47w13exd9lhw",
+            "state": "incoming",
+            "time": "21:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group C",
+            "home": {
+                "id": "eqi93j51n7mhyon0hzb4kxsdg",
+                "name": "Bolivia",
+                "shortName": "Bolivia",
+                "officialName": "Bolivia",
+                "code": "BOL",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "8856r86rattc8kxn6a0l9tb2t",
+                "name": "Panama",
+                "shortName": "Panama",
+                "officialName": "Panama",
+                "code": "PAN",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "02/07/24",
+            "fullDate": "2024-07-03T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "aa1dcpurz7qci7hergnvuucr8",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group D",
+            "home": {
+                "id": "bfgqfm4qa3mal7fll74wd04mu",
+                "name": "Costa Rica",
+                "shortName": "Costa Rica",
+                "officialName": "Costa Rica",
+                "code": "CRC",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "3cwjdmekfdouwg990mqdq9fh0",
+                "name": "Paraguay",
+                "shortName": "Paraguay",
+                "officialName": "Paraguay",
+                "code": "PAR",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "02/07/24",
+            "fullDate": "2024-07-03T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "b8i5l1mx24q6bll55jp9xs0es",
+            "state": "incoming",
+            "time": "18:00",
+            "country": "south-america",
+            "week": "3",
+            "group": "Group D",
+            "home": {
+                "id": "ajab3nmpoltsoeqcuoyi4pwzx",
+                "name": "Brazil",
+                "shortName": "Brazil",
+                "officialName": "Brazil",
+                "code": "BRA",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            },
+            "away": {
+                "id": "7km4szeh6fs5bbdgypshh0snd",
+                "name": "Colombia",
+                "shortName": "Colombia",
+                "officialName": "Colombia",
+                "code": "COL",
+                "score": 0,
+                "penal": null,
+                "phrase": null
+            }
+        },
+        {
+            "date": "04/07/24",
+            "fullDate": "2024-07-05T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "cpxoqgt9l6yaptm8d1teyu044",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "1st ranked Group A"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "2nd ranked Group B"
+            }
+        },
+        {
+            "date": "05/07/24",
+            "fullDate": "2024-07-06T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "cqdvabu2hot98b5metcw3bs44",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "1st ranked Group B"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "2nd ranked Group A"
+            }
+        },
+        {
+            "date": "06/07/24",
+            "fullDate": "2024-07-06T22:00:00.000Z",
+            "gmtTime": "22:00:00Z",
+            "id": "cr9uo3golq0p9zdpzyqxqtpuc",
+            "state": "incoming",
+            "time": "15:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "1st ranked Group D"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "2nd ranked Group C"
+            }
+        },
+        {
+            "date": "06/07/24",
+            "fullDate": "2024-07-07T01:00:00.000Z",
+            "gmtTime": "01:00:00Z",
+            "id": "cqtv4n7a9n33xzemraniw328k",
+            "state": "incoming",
+            "time": "18:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "1st ranked Group C"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "2nd ranked Group D"
+            }
+        },
+        {
+            "date": "09/07/24",
+            "fullDate": "2024-07-10T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "9qcotranxvz8rvbr0ws19vx1w",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Winner Quarter-final 1"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Winner Quarter-final 2"
+            }
+        },
+        {
+            "date": "10/07/24",
+            "fullDate": "2024-07-11T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "9qswess8tyllvzudui96enytw",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Winner Quarter-final 3"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Winner Quarter-final 4"
+            }
+        },
+        {
+            "date": "13/07/24",
+            "fullDate": "2024-07-14T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "c4c8ox2xh6uuf93j7wlcj5dec",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Loser Semi-final 1"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Loser Semi-final 2"
+            }
+        },
+        {
+            "date": "14/07/24",
+            "fullDate": "2024-07-15T00:00:00.000Z",
+            "gmtTime": "00:00:00Z",
+            "id": "ekpfln70ct0cgoupfrd0bmvx0",
+            "state": "incoming",
+            "time": "20:00",
+            "country": "south-america",
+            "week": null,
+            "group": null,
+            "home": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Winner Semi-final 1"
+            },
+            "away": {
+                "score": 0,
+                "penal": null,
+                "phrase": "Winner Semi-final 2"
+            }
+        }
+    ]
+}
